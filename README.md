@@ -41,3 +41,7 @@ Follow these steps to get started with VSTECHDrive on your local machine.
    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+![Alt text](./git-docs/image.png)
+
+![Alt text](./git-docs/image-light.png)
