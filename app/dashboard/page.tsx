@@ -4,8 +4,10 @@ import Dropzone from "../components/Dropzone";
 import supabase from "../supabase";
 import { FileType } from "@/lib/types";
 import TableWrapper from "../components/table/TableWrapper";
+import getSupabaseInstance from "../supabase";
 
 const DashboardPage = async () => {
+  const supabase = getSupabaseInstance();
   const { data, error } = await supabase.from("files").select();
   const files: FileType[] | null = data;
   return (

@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VSTECHDrive
+
+VSTECHDrive is a file storage and sharing application designed for simplicity and efficiency. It allows users to upload, manage, and share files effortlessly.
+
+## Features
+
+- **Theme Support:** Choose between dark, light, or system theme to suit your preference.
+- **Beautiful UI Components:** Utilizes [Shadcn UI](https://shadcn-ui.com/) for visually appealing and reusable components.
+- **Cloud Storage:** Seamlessly upload files to the cloud through drag and drop functionality.
+- **Supabase Integration:** Leverages [Supabase](https://supabase.io/), an open-source alternative to Firebase, for storing both data and files securely.
+- **Authentication with Clerk:** Implements [Clerk](https://clerk.dev/) for authentication and OAuth, ensuring a secure user experience.
+- **File Sharing:** Share file links with others for easy collaboration.
+- **Download and Deletion:** Download files from the list and delete files from storage effortlessly.
+- **File Management:** Supports all file types, search functionality, sorting, and pagination for a seamless user experience.
+- **Responsive Design:** Ensures optimal user experience across various devices.
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to get started with VSTECHDrive on your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) installed
+- [Supabase](https://supabase.io/) account for database setup
+- [Clerk](https://clerk.dev/) account for authentication setup
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Omoshlawi/v-drive.git
+
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

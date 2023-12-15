@@ -3,15 +3,15 @@ import { cn } from "@/lib/utils";
 import { useUser } from "@clerk/nextjs";
 import React, { useRef, useState } from "react";
 import { default as DropzoneComponent, DropzoneRef } from "react-dropzone";
-import supabase from "../supabase";
 import { usePathname, useRouter } from "next/navigation";
+import getSupabaseInstance from "../supabase";
 
 const Dropzone = () => {
   const [loading, setLoading] = useState(false);
   const { isLoaded, isSignedIn, user } = useUser();
   const pathName = usePathname();
   const { refresh } = useRouter();
-
+  const supabase = getSupabaseInstance();
   const onDrop = (acceptedFiles: File[]) => {
     console.log(acceptedFiles);
 
